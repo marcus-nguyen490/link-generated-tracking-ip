@@ -5,7 +5,7 @@ const ipSchema = new mongoose.Schema({
     type: String,
     required: true,
   }
-});
+}, { timestamps: true });
 
 const Ip = mongoose.model('Ip', ipSchema);
 
